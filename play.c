@@ -51,7 +51,7 @@ void play(FILE *fp)
 
 	ao_initialize();
 
-	data.driver_id = ao_driver_id("alsa");
+	data.driver_id = ao_default_driver_id();
 
 	if(-1 == data.driver_id)
 	{
